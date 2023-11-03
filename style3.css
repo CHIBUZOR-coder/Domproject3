@@ -1,0 +1,102 @@
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./imaje/27228573_podium_stage_ba_58.jpg) no-repeat center
+    center/ cover;
+  height: 100vh;
+  position: relative;
+  /* text-align: center; */
+}
+
+.title {
+  /* position: relative; */
+  padding: 20px 0 0 0;
+  width: 80%;
+  text-align: center;
+  margin:0 auto 0 auto;
+}
+.container {
+  background-color: antiquewhite;
+  position: relative;
+  width: 80%;
+  /* text-align: left; */
+  margin: 200px auto 0 auto;
+  border-radius: 5px;
+  box-shadow: -4px 6px 4px rgba(12, 11, 11, 5);
+}
+
+.question {
+  font-size: larger;
+  margin: 20px 0 0 0;
+  border-bottom: 2px solid;
+  height: 30px;
+  cursor: pointer;
+}
+
+.question::after {
+  position: absolute;
+  content: '+';
+  font-weight: 1000;
+  left: 96%;
+}
+
+.answer {
+    position: relative;
+  padding: 15px 0 0 12px;
+  font-size: larger;
+    width: 90%;
+  height: 0px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.content {
+  margin: 0 0 0 15px;
+
+} 
+
+.active .answer {
+  padding: 15px 0 15px 12px;
+  font-size: larger;
+  height: auto;
+  overflow: visible;
+  transition: .5s;
+  
+}
+
+
+
+
+
+ .active .question::after {
+  content: '-';
+  position: absolute;
+  left: 100%;
+  left: 96%;
+}
+
+
+ .active .question {
+ font-size: 15px;
+ transition: .5s;
+}
+
+
+
+
+/* 
+.active {
+  padding: 15px 0 12px 12px;
+  font-size: larger;
+  height: auto; 
+  overflow: visible; 
+  transition: 0.5s;
+} */
+
+/* Set height to 'auto' to reveal the content */
+/* Set overflow to 'visible' to show the content */
